@@ -1,0 +1,36 @@
+#Navbar {
+    width: 92vw;
+    margin: auto;
+    display: none;
+
+    .type {
+        
+
+        ul {
+            list-style: none;
+            padding-left: 0;
+
+            li {
+
+                a {
+                    display: flex;
+                    flex-direction: row;
+                    
+                    text-decoration: none;
+                    color: white;
+
+                    img {
+                        max-width: 5vh;
+                        max-height: 5vh;
+                        margin: auto 0 auto 0;
+                    }
+
+                    span {
+                        margin: 10vw;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}

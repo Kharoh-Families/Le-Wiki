@@ -1,4 +1,5 @@
 import React, { useContext } from 'react'
+import Navbar from '../widgets/Navbar'
 
 const ItemPage = (props: ItemPageProps) => {
 
@@ -6,9 +7,7 @@ const ItemPage = (props: ItemPageProps) => {
   return (
     <div id='ItemPage' className={props.item.name}>
       <main>
-        <nav>
-          temp
-        </nav>
+        <Navbar />
         <div id='content'>
           <h2>{ props.item.name }</h2>
           <ul>

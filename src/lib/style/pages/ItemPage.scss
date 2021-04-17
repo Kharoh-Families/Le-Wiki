@@ -5,16 +5,12 @@
         display: grid;
         grid-template-rows: 3;
 
-        nav {
-            width: 92vw;
-            display: none;
-        }
     
         #content {
             width: 92vw;
             margin: 2vw;
             padding: 2vw;
-            grid-area: 2;
+            grid-area: 2;   
     
             ul {
                 list-style: none;
@@ -22,7 +18,7 @@
             }
     
             table, th, td {
-                border: 1px solid black;
+                border: 1px solid white;
                 border-collapse: collapse;
             }
     
@@ -67,7 +63,7 @@
             width: 80vw;
             margin: 5vw;
             padding: 5vw;
-            border: solid 1px black;
+            border: solid 1px white;
 
             grid-area: 1;
             
