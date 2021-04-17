@@ -1,21 +1,20 @@
 import React, { Component, ComponentType, useEffect, useState } from 'react'
 import { HashRouter, Route, Switch } from 'react-router-dom'
-import Home from './lib/components/Home'
+import HomePage from '../lib/components/pages/HomePage'
+import ItemPage from '../lib/components/pages/ItemPage'
 
 const App = () => {
 
-  const items: { [key: string]: [ { [key: string]: any } ] } = require('./lib/assets/items/items').items
-  console.log(require('./lib/assets/items/items').items)
+  const items: { [key: string]: [ { [key: string]: { [key: string]: any } } ] } = require('../lib/assets/items/items').items
 
   let routes: any[] = []
 
   Object.keys(items).forEach(entry => {
-    console.log(entry, items[entry])
-    Object.keys(items[entry]).forEach(item => {
-      console.log(item)
+    Object.values(items[entry]).forEach(item => {
+      console.log(item.name)
       routes.push(
-        <Route exact path={`/${item}`}>
-          <span>{item}</span>
+        <Route exact path={`/${item.name}`}>
+          <ItemPage item={ item } />
         </Route>
       )
     })
@@ -25,10 +24,11 @@ const App = () => {
     <div id="App">
       <HashRouter>
         <Switch>
-          <Route exact path="/">
-            <Home />
-          </Route>
           { routes }
+          
+          <Route path="/">
+            <HomePage />
+          </Route>
         </Switch>
       </HashRouter>
     </div>
