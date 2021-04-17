@@ -12,7 +12,9 @@ const cotton = {
         ]
     },
     utility: {
-        
+        items: [
+            'cloth'
+        ]
     }
 }
 

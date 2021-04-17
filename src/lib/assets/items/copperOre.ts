@@ -18,7 +18,9 @@ const copperOre = {
         ]
     },
     utility: {
-        
+        items: [
+            'copperIngot'
+        ]
     }
 }
 

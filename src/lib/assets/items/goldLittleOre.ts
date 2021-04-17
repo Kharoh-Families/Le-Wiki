@@ -18,7 +18,9 @@ const goldLittleOre = {
         ]
     },
     utility: {
-        
+        items: [
+            'goldNugget'
+        ]
     }
 }
 

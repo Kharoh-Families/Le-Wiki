@@ -18,7 +18,15 @@ const log = {
         ]
     },
     utility: {
-        
+        items: [
+            'coal',
+            'copperIngot',
+            'goldIngot',
+            'ironIngot',
+            'plank',
+            'silverIngot',
+            'woodpack'
+        ]
     }
 }
 

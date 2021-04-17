@@ -36,7 +36,14 @@ const stick = {
         ]
     },
     utility: {
-        
+        items: [
+            'coal',
+            'copperIngot',
+            'goldIngot',
+            'ironIngot',
+            'silverIngot',
+            'steelIngot'
+        ]
     }
 }
 

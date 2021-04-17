@@ -5,19 +5,16 @@ import ItemPage from '../lib/components/pages/ItemPage'
 
 const App = () => {
 
-  const items: { [key: string]: [ { [key: string]: { [key: string]: any } } ] } = require('../lib/assets/items/items').items
+  const itemsArray: any[] = require('../lib/assets/items/items').itemsArray
 
   let routes: any[] = []
 
-  Object.keys(items).forEach(entry => {
-    Object.values(items[entry]).forEach(item => {
-      console.log(item.name)
-      routes.push(
-        <Route exact path={`/${item.name}`}>
-          <ItemPage item={ item } />
-        </Route>
-      )
-    })
+  itemsArray.forEach(item => {
+    routes.push(
+      <Route exact path={`/${item.name}`}>
+        <ItemPage item={ item } />
+      </Route>
+    )
   })
 
   return (

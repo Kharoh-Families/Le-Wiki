@@ -18,7 +18,9 @@ const ironLittleOre = {
         ]
     },
     utility: {
-        
+        items: [
+            'ironNugget'
+        ]
     }
 }
 

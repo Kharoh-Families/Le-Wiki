@@ -18,7 +18,9 @@ const silverOre =  {
         ]
     },
     utility: {
-        
+        items: [
+            'silverIngot'
+        ]
     }
 }
 

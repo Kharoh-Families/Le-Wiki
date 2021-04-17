@@ -18,7 +18,9 @@ const goldOre = {
         ]
     },
     utility: {
-        
+        items: [
+            'goldIngot'
+        ]
     }
 }
 

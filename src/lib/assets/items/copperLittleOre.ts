@@ -18,7 +18,9 @@ const copperLittleOre = {
         ]
     },
     utility: {
-        
+        items: [
+            'copperNugget'
+        ]
     }
 }
 

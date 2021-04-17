@@ -18,7 +18,9 @@ const ironOre = {
         ]
     },
     utility: {
-        
+        items: [
+            'ironIngot'
+        ]
     }
 }
 
