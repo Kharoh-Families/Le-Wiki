@@ -19,7 +19,7 @@ const ItemPage = (props: ItemPageProps) => {
         {
           window.innerWidth > 768 || isOpen
           ?
-          <Navbar />
+          <Navbar changeMenuState={changeMenuState} />
           :
           undefined
         }

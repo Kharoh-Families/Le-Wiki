@@ -14,19 +14,13 @@ const Navbar = (props: NavbarInformations) => {
                 <ul>
                     {
                         Object.keys(list).map((item: any) => {
-                            return <li><a href={`./#/${item}`}><div><img src={require(`../../../assets/images/items/${item}.svg`)} /></div><span className='itemName'>{item}</span></a></li>
+                            return <li><a href={`./#/${item}`} onClick={() => setInterval(() => props.changeMenuState(), 500)}><div><img src={require(`../../../assets/images/items/${item}.svg`)} /></div><span className='itemName'>{item}</span></a></li>
                         })
                     }
                 </ul>
             </div>
         )
     })
-
-    // let linkArray = items.map((item) => {
-        // return <a href={`./#/${item.name}`}>{item.name}</a>
-    // })
-
-    // console.log(linkArray)
 
     return (
     <nav id="Navbar">
@@ -40,5 +34,5 @@ const Navbar = (props: NavbarInformations) => {
 export default Navbar
 
 export interface NavbarInformations {
-  
+    changeMenuState: Function
 }
