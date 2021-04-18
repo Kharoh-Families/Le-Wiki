@@ -14,7 +14,7 @@ const Navbar = (props: NavbarInformations) => {
                 <ul>
                     {
                         Object.keys(list).map((item: any) => {
-                            return <li><a href={`./#/${item}`} onClick={() => setInterval(() => props.changeMenuState(), 500)}><div><img src={require(`../../../assets/images/items/${item}.svg`)} /></div><span className='itemName'>{item}</span></a></li>
+                            return <li><a href={`./#/${item}`} onClick={() => setTimeout(() => props.changeMenuState(), 500)}><div><img src={require(`../../../assets/images/items/${item}.svg`)} /></div><span className='itemName'>{item}</span></a></li>
                         })
                     }
                 </ul>
