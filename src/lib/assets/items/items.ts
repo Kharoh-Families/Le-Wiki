@@ -71,7 +71,7 @@ const itemsArray= [
     require('./goldOre').goldOre,
     require('./ironIngot').ironIngot,
     require('./ironLittleOre').ironLittleOre,
-    require('./ironNugget'),
+    require('./ironNugget').ironNugget,
     require('./ironOre').ironOre,
     require('./silverIngot').silverIngot,
     require('./silverLittleOre').silverLittleOre,
