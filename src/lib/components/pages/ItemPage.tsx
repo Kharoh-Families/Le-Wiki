@@ -4,7 +4,7 @@ import Navbar from '../widgets/Navbar'
 
 const ItemPage = (props: ItemPageProps) => {
 
-  const [isOpen, changeMenuState] = useState(true)
+  const [isOpen, changeMenuState] = useState(false)
 
   console.log(isOpen)
   return (
