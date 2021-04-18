@@ -4,6 +4,7 @@
     main {
         display: flex;
         flex-direction: column-reverse;
+        margin-top: 30vw;
 
     
         #content {
@@ -92,6 +93,7 @@
         main {
             display: grid;
             grid-template-areas: "Navbar content infobox";
+            margin-top: 10vh;
 
             #content {
                 width: 58vw;
@@ -108,7 +110,7 @@
                 width: 15vw;
                 height: 20vw;
                 grid-area: infobox;
-                margin: 1vw;
+                margin: 10vh 1vw 1vw 1vw;
                 padding: 1vw;
                 gap: 1vh;
 

@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import Header from '../widgets/Header'
 import MenuButton from '../widgets/MenuButton'
 import Navbar from '../widgets/Navbar'
 
@@ -8,13 +9,7 @@ const ItemPage = (props: ItemPageProps) => {
 
   return (
     <div id='ItemPage' className={props.item.name}>
-      {
-        window.innerWidth <= 768
-        ?
-        <MenuButton isOpen={isOpen} changeMenuState={changeMenuState} />
-        :
-        undefined
-      }
+      <Header isOpen={isOpen} changeMenuState={changeMenuState} />
       <main>
         {
           window.innerWidth > 768 || isOpen
