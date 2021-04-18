@@ -22,7 +22,13 @@ const ItemPage = (props: ItemPageProps) => {
           window.innerWidth > 768 || !isOpen
           ?
           <div id='content'>
-            <h2>{ props.item.name }</h2>
+            {
+              window.innerWidth > 768
+              ?
+              <h2>{ props.item.name }</h2>
+              :
+              undefined
+            }
             <ul>
               <li>
                 <h3>Obtention</h3>
