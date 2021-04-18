@@ -2,8 +2,8 @@
     width: 100vw;
 
     main {
-        display: grid;
-        grid-template-rows: 3;
+        display: flex;
+        flex-direction: column-reverse;
 
     
         #content {
@@ -26,7 +26,7 @@
                 width: 90vw;
                 font-size: 3vw;
     
-                th {
+                th, td {
                     text-align: center;
                 }
     
@@ -70,6 +70,7 @@
             display: flex;
             flex-direction: column;
             gap: 5vh;
+            
     
             h3 {
                 margin: auto;
@@ -80,6 +81,47 @@
                 width: 80%;
                 margin: auto;
                 display: block;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    #ItemPage {
+
+        main {
+            display: grid;
+            grid-template-areas: "Navbar content infobox";
+
+            #content {
+                width: 58vw;
+                margin: 1vw;
+                grid-area: content;
+
+                table {
+                    width: 100%;
+                    font-size: 1vw;
+                }
+            }
+
+            #infobox {
+                width: 15vw;
+                height: 15vw;
+                grid-area: infobox;
+                margin: 1vw;
+                padding: 1vw;
+                gap: 1vh;
+
+                border: solid 3px white;
+                border-radius: 25%;
+
+                h3 {
+                    margin: 0 auto 0 auto;
+                }
+
+                img {
+                    margin: 0;
+                }
             }
         }
     }

@@ -14,7 +14,7 @@ const Navbar = (props: NavbarInformations) => {
                 <ul>
                     {
                         Object.keys(list).map((item: any) => {
-                            return <li><a href={`./#/${item}`}><img src={require(`../../../assets/images/items/${item}.svg`)} /><span className='itemName'>{item}</span></a></li>
+                            return <li><a href={`./#/${item}`}><div><img src={require(`../../../assets/images/items/${item}.svg`)} /></div><span className='itemName'>{item}</span></a></li>
                         })
                     }
                 </ul>

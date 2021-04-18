@@ -6,7 +6,6 @@ const ItemPage = (props: ItemPageProps) => {
 
   const [isOpen, changeMenuState] = useState(false)
 
-  console.log(isOpen)
   return (
     <div id='ItemPage' className={props.item.name}>
       {

@@ -18,11 +18,16 @@
                     text-decoration: none;
                     color: white;
 
-                    img {
-                        max-width: 5vh;
-                        max-height: 5vh;
+                    div {
                         margin: auto 0 auto 0;
+
+                        img {
+                            max-width: 5vh;
+                            max-height: 5vh;
+                            margin: auto 0 auto 0;
+                        }
                     }
+
 
                     span {
                         margin: 10vw;
@@ -37,5 +42,29 @@
 @media only screen and (max-width: 767px) {
     #Navbar {
         margin-top: 21vw;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    #Navbar {
+        grid-area: Navbar;
+        width: 15vw;
+        margin: 0;
+        padding-left: 1vw;
+
+        .type ul li a {
+
+            height: 10vh;
+            padding-left: 1vw;
+
+            div {
+                width: 5vh;
+                height: 5vh;
+            }
+
+            span {
+                margin: auto 0 auto 2vw;
+            }
+        }
     }
 }
