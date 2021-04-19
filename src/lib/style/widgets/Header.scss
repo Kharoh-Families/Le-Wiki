@@ -1,16 +1,23 @@
 header {
-    display: flex;
     position: fixed;
     top: 0;
-    background-color: #2E2E2E;
+    
+    background-color: #969696;
+    box-shadow: 0 .25vw 1.6vw 0 rgba(0,0,0,.08);
+    color: black;
+    
+    display: flex;
+    align-items: center;
 
     h1 {
+        color: black;
         margin-top: 5vw;
         margin-left: 6vw;
         line-height: 7vw;
     }
 
     img {
+        height: 25vw;
         width: 25vw;
     }
 }
@@ -21,12 +28,17 @@ header {
         width: 100vw;
 
         img {
-            height: 15vh;
+            height: 13vh;
             width: auto;
         }
 
         h1 {
             margin: 0 auto 0 0;
+        }
+
+        
+        p {
+            margin-right: 3vw;
         }
 
         span {
