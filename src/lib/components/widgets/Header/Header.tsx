@@ -9,7 +9,7 @@ function Header(props: HeaderInformations) {
             ?
             <MenuButton isOpen={props.isOpen} changeMenuState={props.changeMenuState} />
             :
-            <span>Parce que les amis c'est bien, mais la famille c'est mieux !</span>
+            <p>Parce que les amis c'est bien, mais la famille c'est mieux !</p>
             }            
             <h1>Kharoh Families</h1>
             <img src={require('../../../assets/images/global/gradientLogo.svg')} alt="Kharoh Families"/>
